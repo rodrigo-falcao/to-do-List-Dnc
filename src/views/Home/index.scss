@@ -1,0 +1,23 @@
+@use '../../components/sass/variables' as *;
+
+.body {
+    background-color: $body-background;
+    height: 100vh;
+
+    &__margin {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 60px;
+        height: 74px;
+    }
+
+    &__text {
+        padding-top: 219px;
+        width: 1311px;
+        height: 60px;
+        color: $text-color;
+        font-size: 40px;
+        font-family: Poppins;
+        font-weight: 600;
+    }
+}

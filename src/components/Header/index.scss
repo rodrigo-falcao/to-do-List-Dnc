@@ -1,0 +1,43 @@
+@use '../../components/sass/variables' as *;
+
+.header {
+    background-color: $header-background;
+
+    &__margin {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 60px;
+        height: 74px;
+    }
+
+    &__list {
+        height: 74px;
+        align-items: end;
+    }
+
+    ul {
+        color: $text-color;
+        display: flex;
+        list-style: none;
+    }
+
+    li {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+        margin: 0 20px;
+        height: 54px;
+        text-align: center;
+    }
+
+    &__select {
+        background-color: white;
+        color: $text-header;
+        border-radius: 10px 10px 0 0;
+        width: 174px;
+        justify-content: center;
+    }
+}
