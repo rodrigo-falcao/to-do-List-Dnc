@@ -1,8 +1,22 @@
 <h1> To do List - DNC </h1>
 
-https://img.shields.io/badge/Made_by-Rodrigo_like-blue
+<p align="center">
+    <a href="https://www.linkedin.com/in/rodrigo-falcao-ferreira/">
+        <img src="https://img.shields.io/badge/Made_by-Rodrigo_Falcão-blue" alt="Perfil Rodrigo Falcão">
+    </a>
+</p>
+
+<p align="center">
+  <img a="" src="https://github.com/rodrigo-falcao/to-do-List-Dnc/assets/125101340/1bf91939-e806-4150-885c-446ec851944b" alt="accessibility text" style="width: 650px;">
+</p>
+
+## Para fins de avalição:
+
+Link Netlify:
+https://to-do-lisdnc.netlify.app/
 
 Esta é uma avaliação react com utilização de uma tabela de tarefas com opções de edição, exclusão e adição de novas tarefas.
+Feita para visualização na versão desktop, focando na funcionalidade do modal e na apresentação das informações do arquivo tableMock.js 
 
 ## Descrição
 
@@ -12,10 +26,9 @@ O componente é altamente flexível e pode ser facilmente integrado em qualquer 
 
 ## Recursos e Funcionalidades
 
-- Exibição de uma tabela responsiva com as tarefas.
-- Marcação de tarefas como concluídas através de checkbox.
-- Opções de edição e exclusão de tarefas.
-- Adição de novas tarefas.
+- Exibição do modal para confirmar a exclusão ou edição.
+- Exibição das tarefas informadas no mock.
+- Exibição das tarefas já concluídas ou não no checkbox.
 
 ## Recursos adicionados inclusos
 
@@ -24,7 +37,7 @@ O componente é altamente flexível e pode ser facilmente integrado em qualquer 
 
 <hr>
 
-<h4>Tecnologias 🚀</h4>
+<h4>Tecnologias utilizadas </h4>
 
 - Javascript
 - React JS
@@ -34,4 +47,3 @@ O componente é altamente flexível e pode ser facilmente integrado em qualquer 
 - JSON Server
 
 <hr>
-
