@@ -1,20 +1,23 @@
 @use '../../components/sass/variables' as *;
 
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .body {
     background-color: $body-background;
-    height: 100%;
+    flex-grow: 1;
 
     &__margin {
         max-width: 1440px;
         margin: 0 auto;
         padding: 0 60px;
-        height: 74px;
     }
 
     &__text {
-        padding-top: 219px;
-        width: 1311px;
-        height: 60px;
+        padding-top: 145px;
         color: $text-color;
         font-size: 40px;
         font-family: Poppins;
