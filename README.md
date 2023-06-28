@@ -35,9 +35,7 @@ O componente é altamente flexível e pode ser facilmente integrado em qualquer 
 - Adição do modal de Nova Tarefa.
 - Adição da função ligada a esse modal.
 
-<hr>
-
-<h4>Tecnologias utilizadas </h4>
+## Tecnologias utilizadas
 
 - Javascript
 - React JS
@@ -46,4 +44,3 @@ O componente é altamente flexível e pode ser facilmente integrado em qualquer 
 - Sass
 - JSON Server
 
-<hr>
