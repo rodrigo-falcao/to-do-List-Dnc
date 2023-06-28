@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.scss'
 import Delete from '../../assets/delete.png';
 import Edit from '../../assets/edit.png';
-import { useState } from 'react';
 
-export default function Table({ data }) {
+function Table({ data }) {
     // Declaração de estados
     const [showModalEdit, setShowModalEdit] = useState(false);
     const [showModalDelete, setShowModalDelete] = useState(false);
@@ -12,7 +11,7 @@ export default function Table({ data }) {
     const [selectedDescription, setSelectedDescription] = useState("");
 
     // Funções dos Modais (Edição e Deleção)
-    const openModalEdit = ( description) => {
+    const openModalEdit = (description) => {
         setSelectedDescription(description);
         setShowModalEdit(true);
     };
@@ -33,43 +32,47 @@ export default function Table({ data }) {
                 style={{
                 display: showModalEdit || showModalDelete || showModalNew ? "none" : "table",
                 }}
-            >
-                <tr className='table__title'>
-                    <th>Tarefas</th>
-                    <th>Status</th>
-                    <th>Opções</th>
-                </tr>
-                {data.map((obj) => (
-                    <tr 
-                    key={obj.id}
-                    className='table__content'>
-                        <td className='table__body'>{obj.title}</td>
-                            <td className='table__tbCheckContainer'>
-                                <input 
-                                type="checkbox" 
-                                checked={obj.completed} />
-                            </td>
-                            <td colSpan={2}>
-                                <img 
-                                src={Edit} 
-                                alt="EditTable"
-                                onClick={() => {
-                                    openModalEdit(obj.title, obj.description)
-                                }}
-                                />
-                                <img src={Delete} 
-                                alt="Delete Table"
-                                onClick={() => {
-                                    openModalDelete(obj.title, obj.description)
-                                }}
-                                />
-                            </td>
+                >
+                <thead className='table__title'>
+                    <tr>
+                        <th>Tarefas</th>
+                        <th>Status</th>
+                        <th>Opções</th>
                     </tr>
-                ))}
-                <tr className='trNew'>
-                    <td colSpan={2} onClick={openModalNew}>Nova tarefa...</td>
-                    <td className='trNew__add' onClick={openModalNew}>+</td>
-                </tr>
+                </thead>
+                <tbody>
+                    {data.map((obj) => (
+                        <tr 
+                        key={obj.id}
+                        className='table__content'>
+                            <td className='table__body'>{obj.title}</td>
+                                <td className='table__tbCheckContainer'>
+                                    <input 
+                                    type="checkbox" 
+                                    defaultChecked={obj.completed} />
+                                </td>
+                                <td colSpan={2}>
+                                    <img 
+                                    src={Edit} 
+                                    alt="EditTable"
+                                    onClick={() => {
+                                        openModalEdit(obj.description)
+                                    }}
+                                    />
+                                    <img src={Delete} 
+                                    alt="Delete Table"
+                                    onClick={() => {
+                                        openModalDelete(obj.description)
+                                    }}
+                                    />
+                                </td>
+                        </tr>
+                    ))}
+                    <tr className='trNew'>
+                        <td colSpan={2} onClick={openModalNew}>Nova tarefa...</td>
+                        <td className='trNew__add' onClick={openModalNew}>+</td>
+                    </tr>
+                </tbody>
             </table>
 
             {/* Modal de Edição */}
@@ -146,3 +149,5 @@ export default function Table({ data }) {
         </div>
     )
 }
+
+export default Table

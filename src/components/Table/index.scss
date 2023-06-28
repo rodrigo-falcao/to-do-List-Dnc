@@ -13,10 +13,19 @@
     justify-content: space-around;
     width: 50%;
     text-align: center;
+    border-collapse: collapse;
 
     th {
         border-bottom: 8px solid white;
-        padding-bottom: 15px;
+        padding-bottom: 40px;
+    }
+    tr:first-of-type td { 
+        padding-top: 50px;
+    }
+
+    tr td {
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     &__title {
         color: $text-color;

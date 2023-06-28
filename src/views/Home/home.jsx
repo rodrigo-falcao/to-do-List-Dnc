@@ -5,7 +5,7 @@ import Table from '../../components/Table/Table'
 
 export default function home ({ data }) {
     return (
-    <div>
+    <div className='app'>
         <Header />
         <section className='body'>
             <div className='body__margin'>
