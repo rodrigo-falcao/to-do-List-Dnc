@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img a="" src="https://github.com/rodrigo-falcao/to-do-List-Dnc/assets/125101340/1bf91939-e806-4150-885c-446ec851944b" alt="accessibility text" style="width: 650px;">
+  <img a="" src="https://github.com/rodrigo-falcao/to-do-List-Dnc/assets/125101340/1bf91939-e806-4150-885c-446ec851944b" alt="Imagem projeto" style="width: 650px;">
 </p>
 
 ## Para fins de avalição:
