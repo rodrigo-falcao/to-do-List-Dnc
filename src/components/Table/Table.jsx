@@ -22,7 +22,7 @@ function Table({ data }) {
     const openModalNew = () => {
         setShowModalNew(true);
     };
-
+    
     return (
         <div className='container'>
             {/* Tabela */}
