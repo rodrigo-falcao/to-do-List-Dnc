@@ -40,4 +40,19 @@
         width: 174px;
         justify-content: center;
     }
+
+    @media (max-width: 768px) {
+        &__margin {
+            padding: 0 10px;
+        }
+    
+        li {
+            font-size: 18px;
+            margin: 0 5px;
+        }
+    
+        &__select {
+            width: 100px;
+        }
+    }
 }

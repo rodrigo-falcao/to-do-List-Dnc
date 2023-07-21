@@ -14,6 +14,7 @@
     width: 50%;
     text-align: center;
     border-collapse: collapse;
+    max-width: 1440px;
 
     th {
         border-bottom: 8px solid white;
@@ -157,5 +158,97 @@
         background-color: $text-color;
         color: $body-background;
         border: 1px solid #000;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+    margin-top: 30px;
+    }
+
+    .table {
+    margin: 30px 10px;
+    width: 100%;
+
+    th {
+        padding-bottom: 10px;
+    }
+    tr:first-of-type td {
+        padding-top: 10px;
+    }
+
+    tr td {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    &__title {
+        font-size: 24px;
+    }
+
+    &__title th:first-child {
+        text-align: left;
+    }
+
+    &__body {
+        text-align: left;
+    }
+
+    &__content {
+        font-size: 20px;
+    }
+
+    .trNew {
+        font-size: 20px;
+    }
+
+    .trNew__add {
+        font-size: 26px;
+    }
+    }
+
+    .modal {
+    &__content {
+        width: 90%;
+        max-width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        padding: 10px 0;
+    }
+
+    &__content--buttons {
+        display: flex;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    span {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    input {
+        font-size: 20px;
+        padding: 10px 0;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        font-size: 24px;
+        margin: 10px;
+        padding: 15px;
+    }
     }
 }
